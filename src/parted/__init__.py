@@ -434,6 +434,7 @@ archLabels = {
     "aarch64": ["msdos", "gpt"],
     "mips64": ["msdos", "gpt"],
     "armv7l": ["msdos", "gpt"],
+    "armv8l": ["msdos", "gpt"],
     "riscv32": ["msdos", "gpt"],
     "riscv64": ["msdos", "gpt"],
     "loongarch32": ["msdos", "gpt"],
@@ -479,12 +480,12 @@ __archLabels = (
     ("dasd", "s390x?$"),
     (
         "gpt",
-        "i[3-6]86$|x86_64$|ia64$|ppc(64|64le)?$|aarch64$|armv7l$|riscv(32|64)$|loongarch(32|64)$",
+        "i[3-6]86$|x86_64$|ia64$|ppc(64|64le)?$|aarch64$|armv[78]l$|riscv(32|64)$|loongarch(32|64)$",
     ),
     ("mac", "ppc(64)?$"),
     (
         "msdos",
-        "i[3-6]86$|x86_64$|s390x?$|alpha$|ia64$|ppc(64|64le)?$|aarch64$|mips64$|armv7l$|riscv(32|64)$|loongarch(32|64)$",
+        "i[3-6]86$|x86_64$|s390x?$|alpha$|ia64$|ppc(64|64le)?$|aarch64$|mips64$|armv[78]l$|riscv(32|64)$|loongarch(32|64)$",
     ),
     ("sun", "sparc(64)?$"),
 )
